@@ -1,13 +1,4 @@
 
-clear all
-
-% --- parameters ---
-
-%% Prefilter
-Fc = 1;
-
-%% Master/Slave Motor constants
-Kt2c_m = 1.182; % torque -> current
 Kt2c_s = 1.182; % torque -> current
 maxCurrent_m = 4.5; % ampere
 maxCurrent_s = 4.5; % ampere
@@ -50,7 +41,9 @@ Kd_m = 0.005;
 Kp_s = 1;
 Kd_s = 0.5;
 
-Kv_fc = 10; 
+
+
+
 
 
 % 
@@ -60,9 +53,8 @@ Kv_fc = 10;
 % %% Mech and Elect parameters
 % L = 0.0000025; % [H]
 % R = 0.434; % [Ohm]
- J = 0.50; % [kg m^2]
- J_r = 0.60; 
- B = 0.010; % [Nm / (rad/s)]
+% J = 0.50; % [kg m^2]
+% B = 0.010; % [Nm / (rad/s)]
 % Km = 2; % [Nm / A]
 % Ke = 2; % [V / (rad/s)]
 % Jl = 0.03;
