@@ -22,8 +22,8 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 0.5; % environment position (rad)
-Be = 10;
+qe = 1; % environment position (rad)
+Be = 10^3;
 Ke = 10;
 
 %% Numerical derivative
@@ -49,7 +49,7 @@ Kd_m = 6;
 %% Passivity controller gains for slave robot
 Kp_s = 200;
 Kd_s = 6;
-Kv_fc = 0.1; 
+Kv_fc = 30; 
 
 
 % 
@@ -60,9 +60,9 @@ Kv_fc = 0.1;
 %% Mech and Elect parameters
 L = 0.0025; % [H]
 R = 0.434; % [Ohm]
-J = 0.010; % [kg m^2]
-J_r = 0.1; 
-B = 0.01; % [Nm / (rad/s)]
+J = 50; % [kg m^2]
+J_r = 51; 
+B = 100; % [Nm / (rad/s)]
 Km = 2; % [Nm / A]
 Ke = 2; % [V / (rad/s)]
 Jl = 0.03;
