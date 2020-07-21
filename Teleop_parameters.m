@@ -22,7 +22,7 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 1.2; % environment position (rad)
+qe = 1; % environment position (rad)
 Be = 5;
 Ke = 10;
 
@@ -55,10 +55,7 @@ Kp_s = 1;
 Kd_s = 0.5;
 %Kd_s = 6;
 
-Kv_fc = 10; 
-
-
-
+Kv_fc = 0; 
 
 % 
 % 
@@ -67,9 +64,9 @@ Kv_fc = 10;
 % %% Mech and Elect parameters
 % L = 0.0000025; % [H]
 % R = 0.434; % [Ohm]
-J = tau_m/k_m; % [kg m^2]
-B = 1/k_m; % [Nm / (rad/s)]
-J_r = J * 1.1;
+J = tau_m / k_m; % [kg m^2]
+B = 1 / k_m; % [Nm / (rad/s)]
+J_r = J + J * 0.2;
 % Km = 2; % [Nm / A]
 % Ke = 2; % [V / (rad/s)]
 % Jl = 0.03;
