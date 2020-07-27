@@ -22,7 +22,7 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 2; % environment position (rad)
+qe = 0.5; % environment position (rad)
 Be = 5;
 Ke = 10;
 
@@ -55,7 +55,7 @@ Kp_s = 1;
 Kd_s = 0.5;
 %Kd_s = 6;
 
-Kv_fc = 50; 
+Kv_fc = 0; 
 
 % 
 % 
