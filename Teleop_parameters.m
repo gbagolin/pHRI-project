@@ -22,7 +22,7 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 1; % environment position (rad)
+qe = 2; % environment position (rad)
 Be = 5;
 Ke = 10;
 
@@ -43,7 +43,7 @@ Bh = 0.02;
 
 
 %% Passivity controller gains for master robot
-Kp_m = 0.01;
+Kp_m = 0.01; 
 %Kp_m = 200;
 Kd_m = 0.005;
 %Kd_m = 6;
@@ -55,7 +55,7 @@ Kp_s = 1;
 Kd_s = 0.5;
 %Kd_s = 6;
 
-Kv_fc = 0; 
+Kv_fc = 50; 
 
 % 
 % 

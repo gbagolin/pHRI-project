@@ -1,0 +1,5 @@
+plot(out.fd.time, out.fd.data, out.fc.time, out.fc.data, out.fe.time, out.fe.data, out.fa.time, out.fa.data', 'LineWidth',3)
+legend('fd', 'fc','fe','fa')
+yticks(0:0.5:5)
+xticks(0:0.5:10)
+saveas(gcf,path)
