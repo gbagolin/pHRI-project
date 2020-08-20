@@ -24,7 +24,7 @@ lArm_m = 0.1; % m
 lArm_s = 0.1; % m
 qe = 0.5; % environment position (rad)
 Be = 5;
-Ke = 10;
+Ke = 1000;
 
 %% Numerical derivative
 beta_s = 10;
@@ -32,15 +32,13 @@ Ts = 0.002;
 
 
 %% Human PD
-Kp_h = 1.2;
-Kd_h = 0.5;
+Kp_h = 10;
+Kd_h = 10;
 Fc_h = 5; % (Hz)
 
 %% Human ARM
 Jh = 0.02;
 Bh = 0.02;
-
-
 
 %% Passivity controller gains for master robot
 Kp_m = 0.01; 
@@ -48,56 +46,15 @@ Kp_m = 0.01;
 Kd_m = 0.005;
 %Kd_m = 6;
 
-
 %% Passivity controller gains for slave robot
 Kp_s = 1;
 %Kp_s = 200;
 Kd_s = 0.5;
 %Kd_s = 6;
 
-Kv_fc = 0; 
+Kv_fc = 10; 
 
-% 
-% 
-% 
-% 
-% %% Mech and Elect parameters
-% L = 0.0000025; % [H]
-% R = 0.434; % [Ohm]
 J = tau_m / k_m; % [kg m^2]
 B = 1 / k_m; % [Nm / (rad/s)]
-J_r = J + J * 0.2;
-% Km = 2; % [Nm / A]
-% Ke = 2; % [V / (rad/s)]
-% Jl = 0.03;
-% Bl = 0.02;
-% N =1;
-% 
-% %% Limits
-% Vmax = 10; % [V]
-% Imax = 4.5; % [A]
-% 
-% 
-% %% Prefilter
-% Fc = 20;
-% 
-% %% Controller
-% kp = 5;
-% ki = 0.1;
-% 
-% 
-% %% fdt
-% s = tf('s');
-% G_V2vel = Km/((L*s+R)*(J*s+B)+Ke*Km);
-% G_V2pos = G_V2vel/s;
-% 
-% 
-% 
-% % %%parametri controllore
-% % Kp = 5;
-% % Ki = 0;
-% % Kd = 0;
-% % 
-% % % 
-% % Ts = 0.5; 
-% 
+J_r = 1e-1;
+
