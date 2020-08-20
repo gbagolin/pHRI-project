@@ -24,7 +24,7 @@ lArm_m = 0.1; % m
 lArm_s = 0.1; % m
 qe = 0.5; % environment position (rad)
 Be = 5;
-Ke = 1000;
+Ke = 10;
 
 %% Numerical derivative
 beta_s = 10;
@@ -56,5 +56,5 @@ Kv_fc = 10;
 
 J = tau_m / k_m; % [kg m^2]
 B = 1 / k_m; % [Nm / (rad/s)]
-J_r = 1e-1;
+J_r = J;
 
