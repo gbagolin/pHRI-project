@@ -1,5 +1,3 @@
 plot(out.qm.time, out.qm.data, out.qm_ref.time, out.qm_ref.data, out.xs.time, out.xs.data,'LineWidth',3)
 legend('xm', 'qmref','xs')
-yticks(0:0.1:2)
-xticks(0:0.5:7)
-saveas(gcf,path)
+title('Posizioni con derivata discreta')

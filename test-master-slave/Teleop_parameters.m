@@ -22,7 +22,7 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 1; % environment position (rad)
+qe = 0.5; % environment position (rad)
 Be = 5;
 Ke = 10;
 
@@ -50,9 +50,11 @@ Kd_m = 0.005;
 Kp_s = 1;
 Kd_s = 0.5;
 
+Kv_fc = 100; 
 
-
-
+J = tau_m / k_m; % [kg m^2]
+B = 1 / k_m; % [Nm / (rad/s)]
+J_r = J + J * 0.8;
 
 
 % 
