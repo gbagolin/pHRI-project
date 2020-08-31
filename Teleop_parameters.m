@@ -23,7 +23,7 @@ tau_s = 1.217;
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
 qe = 0.5; % environment position (rad)
-Be = 0.5;
+Be = 10;
 Ke = 10;
 
 %% Numerical derivative
@@ -31,7 +31,7 @@ beta_s = 10;
 Ts = 0.002;
 
 %% Human PD
-Kp_h = 1;
+Kp_h = 1.2;
 Kd_h = 1;
 Fc_h = 5; % (Hz)
 
@@ -50,9 +50,9 @@ Kd_m = 1;
 Kp_s = 1;
 Kd_s = 1;
 
-Kv_fc = 100; 
+Kv_fc = 30; 
 
 J = tau_m / k_m; % [kg m^2]
 B = 1 / k_m; % [Nm / (rad/s)]
-J_r = J + J * 0.8;
+J_r = J + J * 0.5;
 

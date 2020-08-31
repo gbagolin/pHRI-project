@@ -23,7 +23,7 @@ tau_s = 1.217;
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
 qe = 0.5; % environment position (rad)
-Be = 5;
+Be = 0;
 Ke = 10;
 
 %% Numerical derivative
