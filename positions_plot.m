@@ -1,5 +1,5 @@
 plot(out.qm.time, out.qm.data, out.qm_ref.time, out.qm_ref.data, out.xs.time, out.xs.data,'LineWidth',3)
 legend('xm', 'qmref','xs')
-title('Posizione con force control con attrito B = 10')
+title('Posizione con force control con attrito B = 50')
 yticks(0:0.1:1)
 xticks(0:0.5:7)

@@ -23,7 +23,7 @@ tau_s = 1.217;
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
 qe = 0.5; % environment position (rad)
-Be = 10;
+Be = 50;
 Ke = 10;
 
 %% Numerical derivative
@@ -55,4 +55,5 @@ Kv_fc = 30;
 J = tau_m / k_m; % [kg m^2]
 B = 1 / k_m; % [Nm / (rad/s)]
 J_r = J + J * 0.5;
+%J = J_r; % [kg m^2] 
 
