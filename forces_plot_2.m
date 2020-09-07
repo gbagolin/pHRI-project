@@ -1,0 +1,5 @@
+plot(out.fd.time, out.fd.data, out.fa.time, out.fd.data ,out.fh.time, out.fh.data, out.fcm.time,out.fcm.data,out.fe.time,out.fe.data,'LineWidth', 3)
+legend('fd','fa','fh','fcm','fe')
+title("Forze, con force control con Kdh = 1")
+xlabel('sec')
+ylabel('Newton')
