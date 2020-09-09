@@ -57,3 +57,9 @@ B = 1 / k_m; % [Nm / (rad/s)]
 J_r = J + J * 0.5;
 %J = J_r; % [kg m^2] 
 
+%%delay
+D = 2;
+%%
+Hd = 100
+alpha = 1
+beta = 0.1
