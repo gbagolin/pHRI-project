@@ -58,8 +58,8 @@ J_r = J + J * 0.5;
 %J = J_r; % [kg m^2] 
 
 %%delay
-D = 2;
+D = 0;
 %%
-Hd = 100
-alpha = 1
-beta = 0.1
+param.Hd = 1;
+param.alpha = 0.5;
+param.beta = 0.1;
