@@ -82,14 +82,13 @@ function sys = mdlUpdate(t,x,u,param)
 
 h_k = (x(1) + u(1) - u(2));
 
-h_k_plus_1_sign = h_k - param.beta * h_k; 
+h_k_plus_1_sign = h_k;
+energy_out = 0;
 
-energy_out = 0; 
-%{
-if h_k_plus_1_sign > 0
+if h_k > 0
+    h_k_plus_1_sign = h_k - param.beta * h_k; 
     energy_out = param.beta * h_k; 
-end 
-%}
+end
 
 sys = [h_k_plus_1_sign, energy_out];
 
