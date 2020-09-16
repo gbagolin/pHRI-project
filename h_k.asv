@@ -80,12 +80,11 @@ ts  = [0 0];
 %
 function sys = mdlUpdate(t,x,u,param)
 
+
+if h
+
 h_k = (x(1) + u(1) - u(2));
 
-if h_k > param.Hd 
-    h_k = x(1) - u(2); 
-end 
-   
 h_k_plus_1_sign = h_k;
 energy_out = 0;
 

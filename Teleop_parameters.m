@@ -22,7 +22,7 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 0.5; % environment position (rad)
+qe = 5; % environment position (rad)
 Be = 5;
 Ke = 10;
 
@@ -58,8 +58,8 @@ J_r = J + J * 0.5;
 %J = J_r; % [kg m^2] 
 
 %%delay
-D = 5;
+D = 1;
 %%
-param.Hd = 5;
-param.alpha = 1;
-param.beta = 1;
+param.Hd = 0.075; %[Joule]
+param.alpha = 0.1;
+param.beta = 0.1;
