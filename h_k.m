@@ -67,7 +67,7 @@ sys = simsizes(sizes);
 
 x0  = 0;
 str = [];
-ts  = [0 0]; 
+ts  = [Ts 0]; 
 
 % end mdlInitializeSizes
 
