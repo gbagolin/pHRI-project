@@ -50,15 +50,17 @@ Kd_m = 1;
 Kp_s = 1;
 Kd_s = 1;
 
-Kv_fc = 0; 
+Kv_fc = 30; 
 
 J = tau_m / k_m; % [kg m^2]
 B = 1 / k_m; % [Nm / (rad/s)] 
-J_r = J + J * 0.5;
+J_r = J + 0.5*J;
 
 %%delay
-D = 1;
+D = 2;
 %%
-param.Hd = 1; %[Joule]
+param.Hd = 0.5; %[Joule]
 param.alpha = 0.1;
 param.beta = 0.1;
+param.Hmin = 0;     
+param.Hmax = 1; 
