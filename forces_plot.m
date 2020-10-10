@@ -3,7 +3,7 @@ legend('fd','fa','fh','fc','fcm','fe')
 title("Forze, con force control, con attrito")
 xlabel('sec')
 ylabel('Newton')
-yticks(-50:5:200)
+yticks(-50:1:200)
 xticks(0:0.5:7)
 
 

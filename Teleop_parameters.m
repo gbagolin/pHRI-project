@@ -22,8 +22,8 @@ tau_s = 1.217;
 %% Environment PD
 lArm_m = 0.1; % m
 lArm_s = 0.1; % m
-qe = 0.5; % environment position (rad)
-Be = 5;
+qe = 5; % environment position (rad)
+Be = 0.5;
 Ke = 10;
 
 %% Numerical derivative
@@ -38,10 +38,6 @@ Fc_h = 5; % (Hz)
 %% Human ARM
 Jh = 0.02;
 Bh = 0.02;
-
-%%
-prop = 1; 
-der = 0.1; 
 %% Passivity controller gains for master robot
 Kp_m = 1;
 Kd_m = 1;
@@ -50,13 +46,16 @@ Kd_m = 1;
 Kp_s = 1;
 Kd_s = 1;
 
-Kv_fc = 30; 
+Kv_fc = 10; 
 
 J = tau_m / k_m; % [kg m^2]
 B = 1 / k_m; % [Nm / (rad/s)] 
-J_r = J + 0.5*J;
+J_r = J;
 
-%%delay
+%%
+%B = 0; 
+%J = J_r; 
+%% delay
 D = 2;
 %%
 param.Hd = 0.5; %[Joule]
