@@ -1,6 +1,0 @@
-plot(out.fcm.Time, out.fcm.Data, out.fe.Time, out.fe.Data,'LineWidth', 2)
-legend('fcm','fe')
-title("Confronto forze")
-yticks(0:10:200)
-xlabel('sec')
-ylabel('Newton')

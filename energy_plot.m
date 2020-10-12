@@ -1,5 +1,0 @@
-plot(out.tm.time, out.tm.data, out.ts.time, out.ts.data, out.eom.time, out.eom.data,out.eos.time, out.eos.data, 'LineWidth',3)
-legend('Master tank', 'Slave tank','Energy out master', 'Energy out slave')
-title('Tank ed energia in uscita free motion')
-xlabel('sec')
-ylabel('joule')
